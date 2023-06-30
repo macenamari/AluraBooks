@@ -1,0 +1,169 @@
+.carrossel__titulo {
+    color: var(--lista-titulo);
+    background-color: var(--header-fundo);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1em 0em 0.5em 0em;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0em;
+}
+
+.card {
+    background-color: var(--header-fundo);
+    box-shadow: 0rem 0.25rem 0.24rem 0rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.75rem;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.descricao {
+    margin-right: 0.5em;
+}
+
+.descricao__titulo__imagem {
+    margin: 0.5em 0em;
+}
+
+.descricao__titulo {
+    color: var(--lista-titulo);
+    font-weight: 700;
+}
+
+.descricao__titulo__livro {
+    color: var(--azul);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5em 0em;
+}
+
+.descricao__texto {
+    font-size: 0.85rem;
+}
+
+.descricao__imagem {
+    border-radius: 0.5rem;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__itens {
+    margin: 0em 0.5em;
+}
+
+.botoes__ancora {
+    background-color: var(--lista-titulo);
+    padding: 1em 2.2em;
+    color: var(--header-fundo);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel__titulo {
+        font-size: 1.75rem;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0em 3em 0em;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0em 15vw 3em 15vw;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .swipe-wrapper {
+        width: 50%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0em;
+    }
+
+    .swiper-wrapper {
+        gap: 2rem;
+    }
+
+    .card {
+        margin-top: 4em;
+        height: 17rem;
+        width: 36rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .card__descricao {
+        align-items: center;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .descricao__titulo__livro {
+        font-size: 1.125rem;
+    }
+
+    .descricao__texto {
+        font-size: 1rem;
+        padding: 0.5em 0.5em 0.5em 0em;
+    }
+
+    .card__botoes {
+        align-items: center;
+        margin-bottom: 1em;
+        
+    }
+
+}
